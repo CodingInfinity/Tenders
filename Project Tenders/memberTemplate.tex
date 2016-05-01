@@ -1,146 +1,152 @@
-\documentclass[]{twentysecondcv}
- 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[utf8]{inputenc}
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Alan} % Your first name
+\familyname{Nungaray} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Calle Allende 266B}{Tepatitlán de Morelos, Jalisco}
+\mobile{(378) 107 1350 }
+
+
+\email{alan\_fanpes@hotmail.com}
+\homepage{alannungaray.com.mx/}{alannungaray.com.mx} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{https://www.facebook.com/AlanDNungaray}
+\photo[60pt][0.4pt]{pictures/foto} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"Be the richest man of the graveyard don't interest me ... My interest is go to the bed every night knowing we did something wonderful" - Steve Jobs}
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
+\makecvtitle % Print the CV title
 
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\profilepic{alice.jpeg} %path of profile pic
-\cvname{Alice} %your name
-\cvjobtitle{Adventurer}%your actual job position
-\cvdate{26 November 1865}%date of birth
-\cvaddress{United Kingdom}%address
-\cvnumberphone{+39 0325658974}%telphone number
-\cvmail{alice@wonderland.com}%e-mail
-\cvsite{http://en.wikipedia.org}%personal site
+\section{Education}
+\cventry{2010--2015}{Computer Engineer}{Centro Universitario de los Altos (UDG)}{tepatitlan}{}{Software Orientation}
 
+\cventry{2011}{Advance Java Course }{\textsc{Java}}{Tepatitlán}{}{In this course i learned the essence of multithreading in Java and Mysql Connection}
 
-\aboutme{
-Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.}%About me section
+\cventry{2007--2010}{Informatics technician}{Centro de Bachillerato Tecnológico Agropecuario No. 32}{Yahualica Jalisco }{\textit{GPA -- 8.0}}{}  % Arguments not required can be left empty
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+\section{Experience}
+\subsection{Vocational}
+\cventry{2014}{Java}  {\textsc{Basic Java }}{Centro Universitario de los Altos}{}{I taught a course of 15 hours in basic Java oriented mathematical problem solving}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skillstext{{lovely/4},{narcissistic/3}}
+%------------------------------------------------
 
-\makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
+\cventry{2014}{HTML5 Workshop}{I participated in intercultural workshops in UDG where I showed how to start developing with HTML5 and the importance of  programming logic in the daily life}{Tepatitlan}{}{}
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%   AWARDS SECTION
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-\section{interests}
-The heroine and the dreamer of Wonderland;  Alice is the principal character.
+\section{Awards}
 
-\section{education}
+\cvitem{2014}{TSS CENEVAL}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{twenty}
-  \twentyitem
-    {since 1865}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {Wonderland}
-    {\emph{A Quantified Theory of Social Cohesion.}}
-  \twentyitem
-    {1863-1865}
-    {M.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1861-1863}
-    {B.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1856-1861}
-    {High school}
-    {Wonderland}
-    {Specializing in mathematics and physics.}
-\end{twenty}
+%----------------------------------------------------------------------------------------
+%   COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills }
+
+\cvitem{Basic}{\textsc{java},C++,Fortran,Php,Ruby,\textsc{python},SQL, NodeJS, Magento,Drupal, Java-Android, MongoDB, ExpressJs}
+\cvitem{Intermediate}{\textsc{html},\LaTeX, Javascript, Linux, JQUERY, AngularJs, Visual Basic, Excel VBA}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{publications}
+%----------------------------------------------------------------------------------------
+%   LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
 
-\begin{twentyshort}
-  \twentyitemshort
-    {1865}
-    {Chapter One, Down the Rabbit Hole.}
-  \twentyitemshort
-    {1865}
-    {Chapter Two, The Pool of Tears.}
-  \twentyitemshort
-    {1865}
-    {Chapter Three,  The Caucus Race and a Long Tale.}
-  \twentyitemshort
-    {1865}
-    {Chapter Four,  The Rabbit Sends a Little Bill.}
-  \twentyitemshort
-    {1865}
-    {Chapter Five,  Advice from a Caterpillar.}
-\end{twentyshort}
+\section{Languages}
+
+\cvitemwithcomment{English}{Basic}{Technical reading }
+
+%----------------------------------------------------------------------------------------
+%   INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvlistdoubleitem{Physics}{Math}
+\cvlistdoubleitem{Scientific computation}{e-Learning Tech}
+\cvlistdoubleitem{Numerical Analysis}{3D Desing }
 
 
 
-\section{awards}
+%----------------------------------------------------------------------------------------
+%   COVER LETTER
+%----------------------------------------------------------------------------------------
 
-\begin{twentyshort}
-  \twentyitemshort
-    {1987}
-    {All-Time Best Fantasy Novel.}
-  \twentyitemshort
-    {1998}
-    {All-Time Best Fantasy Novel before 1990.}
-\end{twentyshort}
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR}{Blue Trail Software\\Niños Heroes 115\\47600 Tepatitlán de Morelos, Jalisco} % Letter recipient
+\date{\today} % Letter date
+\opening{Estimated BTS} % Opening greeting
+\closing{var msg = new SpeechSynthesisUtterance('Thank you for your attention. I sincerely hope give me a chance to work with all my strength for you.');\\
+msg.lang="en-US"\\    
+window.speechSynthesis.speak(msg);} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+I am writing this letter to express my desire to work and innovate for you, for the world.
 
 
-\section{experience}
+Since 8 years I've only been programming in C++, Java for school projects, so i have good skill for solve problems with  algorithmic logic, i thought that would be ideal for me but something was missing, the beauty.
+When i started to be a web developer in 2010 i found the missing piece , could do almost anything  with attractive interfaces and good performance. 
+The last years of my study at university dedicated myself to show  at the students that programming was not only easy  also is wonderful too. 
 
-\begin{twenty}
-  \twentyitem
-    {1900}
-    {Alice in Wonderland-The Circra (1900's) Silent Film.}
-    {Film}
-    {The first Alice on film was over a hundred years ago.}
-  \twentyitem
-    {1933}
-    {Alice in Wonderland 1933 version.}
-    {Film}
-    {This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-\twentyitem
-    {1951}
-    {Disney Film.}
-    {Film}
-    {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
+I started a project called skoolfre,for now it's just paper but i want to one day become a reality. For this i have much to learn. Luckily i like  learning. I have a dream, help to build a free university online with  a concept like duolingo.
 
-\end{twenty}
-\section{other information}
-Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+I recently  had a  contract work for the company Gigantes Agroindustria  where i collaborate  develop some applications they needed to improve administrative parts for the  company.This contract end. I have a good feeling knowing that my time in the company improved  them software and me like a person.
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+Today I knock  your door for a chance to grow and realize my dream of work in a software development company. I hope in my heart that you will open doors for me and give me the opportunity to do my best work with all my effort just for you.
 
-\end{document} 
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
