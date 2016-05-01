@@ -1,110 +1,105 @@
-\documentclass[]{twentysecondcv}
- 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[utf8]{inputenc}
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Reinhardt} % Your first name
+\familyname{Cromhout} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Calle Allende 266B}{Tepatitlán de Morelos, Jalisco}
+\mobile{+2782 301 7299 }
+
+
+\email{reinhardt.cromhout@gmail.com}
+\photo[60pt][0.4pt]{images/reinhardt.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
+\makecvtitle % Print the CV title
 
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\profilepic{images/reinhardt.jpg} %path of profile pic
-\cvname{Reinhardt Cromhout} %your name
-\cvjobtitle{Computer Science Student}%your actual job position
-\cvdate{1 May 2016}%date of birth
-\cvaddress{South Africa}%address
-\cvnumberphone{+27 82 301 7299}%telphone number
-\cvmail{reinhardt.cromhout@gmail.com}%e-mail
-\cvsite{N/A}%personal site
+\section{Education}
+\cventry{2009-2013}{Secondary Education}{Helpmekaar Kollege}{tepatitlan}{}{IEB Matric Sertificate - 7 A's}
 
+\cventry{2014-2016}{BSc Computer Science (Still in final year of Degree)}{University iof Pretoria}{Tepatitlán}{}{Majoring in Computer Science}
 
-\aboutme{
-As a third year Computer Science student at the University of Pretoria I have excelled at my first and second
-year subjects. I received an award as the top BSc Computer Science student in 2014 and the second best BSc
-Computer Science student in 2015. I have always focused on gaining useful knowledge and mastering con-
-cepts and the good marks are just a result of that. I worked for a year as a systems administrator for the School
-of IT at the University of Pretoria.
-Due to the concept based approach of my degree I am not only proficient in the languages and technolo-
-gies that I have been taught, but I have the ability to learn similar languages and technologies fairly quickly.
-In addition I also have strong people skills and am comfortable with leading meetings, delegating tasks and
-enforcing deadlines.}%About me section
+\section{Experience}
+\subsection{Vocational}
+\cventry{2015}{Temporary Part Time Technical Assistant}{University of Pretoria}{}{Systems adminstration for the Department of Information Science}
+%----------------------------------------------------------------------------------------
+%   AWARDS SECTION
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skills{{Web Development/5.0},{Java EE and Spring dependancy injection/5.8},{Systems Administration/5.2},{C++ (advanced)/5.1},{Java/5.5}, {SQL/5.0}}
+\section{Awards}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skillstext{{confident/5},{comitted/6},{compitent/5}}
+\cvitem{2014}{Best first year Computer Science Student at the Uiverstity of Pretoria}
 
-\makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%   COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+\section{Skills }
 
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-\section{interests}
-\begin{itemize}
-	\item Tennis, Cricket, Rugby
-	\item Music Festivals
-	\item Gymnasium exercise
-\end{itemize}.
+\cvitem{Basic}{URDAD mocking framework, Microsoft Sharepoint Server 2013, Microsoft SQL Database Server 2008, Microsoft Active Direcory
+Server(server administration), Hosting the LAMP Stack, Apache Maven}
+\cvitem{Intermediate}{mySQL, Bootstrap, php(as well as connecting php and mySQL),AJAX, Java EE and Spring dependancy injection, JUnit, git, git-flow(source version control)}
+\cvitem{Expert}{Java, C++, MS SQL 2008,HTML5, CSS3, JavaScript/jQuery}
+%----------------------------------------------------------------------------------------
+%   LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
 
-\section{education}
+\section{Languages}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{twenty}
-  \twentyitem
-    {2009-2013}
-    {IEB Matric Sertificate}
-    {Helpmekaar Kollege}
-    {\emph{Secondary Education - 7 A's}}
-  \twentyitem
-    {2014-2016}
-    {BSc Computer Science (Still in final year of Degree)}
-    {University iof Pretoria}
-    {Majoring in Computer Science}
-\end{twenty}
+\cvitemwithcomment{English}{Basic}{Technical reading }
 
+%----------------------------------------------------------------------------------------
+%   INTERESTS SECTION
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{awards}
+\section{Interests}
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvlistdoubleitem{Tennis, Cricket, Rugby}{Learning new Development Technologies}
+\cvlistdoubleitem{Music Festivals}{Gymnasium exercise}
 
-\begin{twentyshort}
-  \twentyitemshort
-    {2014}
-    {Best first year Computer Science Student at the Universtity of Pretoria}
-\end{twentyshort}
-
-
-\section{experience}
-
-\begin{twenty}
-  \twentyitem
-    {2015}
-    {Temporary Part Time Technical Assistant}
-    {University of Pretoria}
-    {Systems adminstration for the Department of Information Science}
-\end{twenty}
-
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
-\end{document} 
+\end{document}
