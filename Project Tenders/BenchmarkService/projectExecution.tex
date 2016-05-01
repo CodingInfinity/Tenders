@@ -10,13 +10,33 @@
 
 \subsection{Initial Ideas on Solving Some Technical Challenges}
 \begin{itemize}
-	\item 
+	\item Using a low level programming language such as c, c++ with assembly to gain access to the hardware and calculate correct values for the benchmarking system.
+	\item Use a REST service for the web interface.
+	\item Using git to roll out production code, and seperate this from development code.
+	\item We will use linux to gain access to system calls which could prove to be useful.
 \end{itemize}
 
 \subsection{Technologies We will Use}
+\begin{itemize}
+	\item Spring
+	For dependancy injection and Aspect Oriented Programming.
+	\item Java
+	For the main development of the backend, allthough for the actual benchmarking a lower level language like C++ might be considered to do measurements. This is so that the programs are executed by a language that does not run through something like the Java VM.
+	\item AngularJS
+	\item This will be combined into a microservices architecture
+\end{itemize} 
 
 \subsection{What Will The Client Receive}
 On completion of the development cycle the client will receive the following:
 \begin{itemize}
-	\item The functional application
+	\item The functional application, which includes:
+	\begin{itemize}
+		\item The functioning web interface
+		\item The backend which will run the bechmarking tests and record the results
+	\end{itemize}
+	\item The source code for the functional application
+	\item Associated build files
+	\item The source code for all unit and integration tests
+	\item The full spesification documentation as required by the agile development methodology
+	\item (possibly) a simple user manual, but this will be debated since part of the goals of the project are to develop a generic, easy to use benchmarking system that the user can hopefully use without much training
 \end{itemize}
