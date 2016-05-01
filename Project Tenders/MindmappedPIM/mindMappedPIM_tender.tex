@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=0.8in]{geometry}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{wrapfig}
+
+
+\graphicspath{ {../images/} }
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+		
+		\begin{figure}[t]
+			\centering
+			\includegraphics[width=175px]{UP_Logo.png}
+		\end{figure}
+		
+		%Title
+		\textsc{\Huge Project Tender} \\ 
+
+		\textsc{\huge \\Project:\\	}
+		\huge Mind Mapped Personal Information Manager
+		\textsc{\Large \\Client:}
+		\large Morkel Theunissen\\
+		\textsc{\huge \\Team:}
+		\huge \textsc{\char 60}CodingInfinity\textsc{\char62}
+		\input{../studentnrs}
+		\small Department of Computer Science, University of Pretoria \\
+		\hfill \\
+
+	\vfill
+
+	{\large Date: \today}		
+		
+		
+	\end{center}
+\end{titlepage}
+
+\pagebreak
+\tableofcontents
+
+\pagebreak
+
+\section{The Team}
+\input{./team.tex}
+\pagebreak
+\section{Project Execution}
+\input{./projectExecution.tex}
+
+\end{document}
+
