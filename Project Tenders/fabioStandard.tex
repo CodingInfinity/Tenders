@@ -1,96 +1,123 @@
-\documentclass[]{twentysecondcv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[utf8]{inputenc}
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Fabio} % Your first name
+\familyname{Loreggian} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{7A Allen Road}{Bedfordview, Johannesburg}
+\mobile{+27745851602}
+
+
+\email{fabio.loreggian@gmail.com}
+%\homepage{alannungaray.com.mx/}{alannungaray.com.mx} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{https://www.facebook.com/fabio.loreggian.9}
+\photo[60pt][0.4pt]{images/fabio.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{"Don't be sad, be awesome instead" - Fabio Loreggian}
+
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
+\makecvtitle % Print the CV title
 
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
-
-\profilepic{images/fabio.jpg} %path of profile pic
-\cvname{Fabio Loreggian} %your name
-\cvjobtitle{Student\\WebTeam and TechTeam for the Computer Science Department at University of Pretoria}%your actual job position
-\cvdate{18 May 1995}%date of birth
-\cvaddress{South Africa}%address
-\cvnumberphone{+27745851602}%telphone number
-\cvmail{fabio.loreggian@gmail.com}%e-mail
-\cvsite{N/A}%personal site
-
-
-\aboutme{
+\section{About Me}
 I am a young male studying Computer Science at the University of Pretoria. I love being active, working hard on things that I love and being with my family and friends. I have a deep passion for computers. I am a natural leader, but I enjoy hearing and following what others have to say. I am driven with all my passions in life.
-%About me section
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skills{{General Computer Knowledge/6.0},{Well Mannered/4.5},{},{Java/5.0},{c++/4.0},{Web Programming/5.0},{Sports/6}, {Karate/4}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skillstext{{Happy/6}, {Optimistic/6}, {Serious/3}, {Enjoy the small things in life/6}}
-
-\makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-\section{interests}
-My interests include computer programming, computer games, cricket, hockey, karate, golf, squash, friends and family.
-\section{education}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{twenty}
-  \twentyitem
-    {since 2013}
-    {Matric Certificate}
-    {St Benedicts}
-    {IEB}
-\end{twenty}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\
-\section{awards}
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\begin{twentyshort}
-  \twentyitemshort
-    {2013}
-    {St Benedicts IT award(Matric)}
-  \twentyitemshort
-    {2014}
-    {Golden Key}
-\end{twentyshort}
+\section{Education}
+\cventry{2013}{IEB Matric}{St Benedicts College}{7 A's}{}{}
+
+\cventry{2014-2016}{BSc Computer Science}{University of Pretoria}{Still in final year of studying}{}{}
+
+\section{Experience}
+\subsection{Part Time}
+\cventry{2015-2016}{Web Programming}  {Python, HTML, CSS, Javascript}{Computer Science Department, University of Pretoria}{Part of WebTeam/TechTeam which created the Computer Science Departments website, www.cs.up.ac.za}{}{}
+
+%------------------------------------------------
 
 
-\section{experience}
+%----------------------------------------------------------------------------------------
+%   AWARDS SECTION
+%----------------------------------------------------------------------------------------
 
-\begin{twenty}
-  \twentyitem
-    {2015-2016}
-    {WebTeam/ TechTeam}
-    {Computer Science Department at the University of Pretoria}
-    {Manage the Computer Science Department Website www.cs.up.ac.za}
-\end{twenty}
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+\section{Awards}
+
+\cvitem{2013}{IT Award St Benedicts}
+\cvitem{2014}{Golden Key Award for top 10 percent in EBIT Faculty}
+
+%----------------------------------------------------------------------------------------
+%   COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills }
+
+\cvitem{Advanced}{\textsc{java},C++,Php,\textsc{python},SQL,\textsc{html},\LaTeX, Javascript, Linux, JQUERY,}
+
+
+%----------------------------------------------------------------------------------------
+%   LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Home Language}{}
+
+%----------------------------------------------------------------------------------------
+%   INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvlistdoubleitem{Computers}{AI}
+\cvlistdoubleitem{Web Development}{Cricket}
+\cvlistdoubleitem{Squash}{Golf}
+\cvlistdoubleitem{Hockey}{Tennis}
+
+\section{Why I want to do the project}
+
+\section{Relevant Past Experience}
+
 
 \end{document}
