@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper,sans]{article}
+\usepackage{geometry}
+\usepackage[some]{background}
+\usepackage{color}
+\usepackage{hyperref}
+
+\definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
+\graphicspath{ {../images/} }
+
+\backgroundsetup{
+	scale=1,
+	angle=0,
+	opacity=1,
+	contents={\begin{tikzpicture}[remember picture,overlay]
+		\path [fill=titlepagecolor] (-0.5\paperwidth,7)rectangle (current page.north east);
+		\draw [color=white, very thick] (30,0)--(5,0.5\paperheight);
+		\draw [color=white, very thick] (5,0)--(10,0.5\paperheight);
+		\draw [color=white, very thick] (7,0)--(10,0.5\paperheight);
+	\end{tikzpicture}}
+}
+
+\begin{document}
+\begin{titlepage}
+\BgThispage
+\newgeometry{left=1cm,right=1cm,bottom=2cm}
+\vspace*{0.1\textheight}
+\noindent
+\textcolor{white}{\Huge\textbf{\textsf{STORM Project Proposal}}}
+\vspace*{4cm}
+\noindent
+\begin{center}
+			\textsc{Clients:} {\huge Linda Marshall \& Vreda Pieterse} \\
+			\vspace*{0.3cm}
+			\textsc{Proposed by:} {\huge CodingInfinity} \\
+			\vspace*{0.1cm}
+			\small Department of Computer Science, University of Pretoria \\
+			\hfill
+\end{center}
+\vspace*{1.5cm}
+\begin{minipage}{0.35\linewidth}
+		\begin{center}
+			\textsc{\textbf{Team Members}}
+		\end{center}
+    \begin{flushright}
+        \input{../groupMembers}
+    \end{flushright}
+\end{minipage} \hspace{15pt}
+\begin{minipage}{0.02\linewidth}
+    \rule{1pt}{140pt}
+\end{minipage} \hspace{-10pt}
+\begin{minipage}{0.63\linewidth}
+\vspace{5pt}
+	\begin{abstract}
+		Lecturers of the department of Computer Science at the University of Pretoria, require a system to be developed to shuffle teams. The system is going to be used by the lecturers of the Software Engineering module (COS301) to determine teams for the “Rocking the boat” exercise of the Software Engineering module using a set of lecturer defined criteria to select the teams.
+	\end{abstract}
+\end{minipage}
+
+\vspace*{1cm}
+{\large Date of Submission:} \today
+\vfill
+\begin{minipage}{\linewidth}
+	\begin{center}
+		\includegraphics[scale=0.3]{UP_Logo}
+	\end{center}
+\end{minipage}
+\end{titlepage}
+\restoregeometry
+
+\pagebreak
+\tableofcontents
+
+\pagebreak
+\thispagestyle{empty}
+\newgeometry{left=7.5cm}
+\pagecolor{titlepagecolor}
+{\color{white}
+\noindent
+\textbf{\textsf{\huge The Team}}\\
+\makebox[0pt][l]{\rule{1.3\textwidth}{1pt}}}
+\restoregeometry
+\nopagecolor
+\section{The Team}
+
+\pagebreak
+\thispagestyle{empty}
+\newgeometry{left=7.5cm}
+\pagecolor{titlepagecolor}
+{\color{white}
+\noindent
+\textbf{\textsf{\huge Project Execution}}\\
+\makebox[0pt][l]{\rule{1.3\textwidth}{1pt}}}
+\restoregeometry
+\nopagecolor
+\section{Project Execution}
+\input{projectExecution}
+
+\end{document}
