@@ -1,5 +1,5 @@
 \subsection{Development Methodology}
-\input{../DevelopmentMethodology.tex}
+\input{../developmentMethodology.tex}
 
 \subsection{Informing the Client}
 \begin{itemize}
@@ -10,34 +10,36 @@
 
 \subsection{Initial Ideas on Solving Some Technical Challenges}
 \begin{itemize}
-	\item Use a REST service for the web interface.
-	\item Using git to roll out production code, and separate this from development code.
-	\item Use Android Studio's built in emulation device to test the application if time permits us to build it.
+	\item Use a REST based communication architecture to allow for integration with a web interface and mobile application.
+	\item Utilizing git, DevOps with a Continuous Integration and Continuous Deployment to separate production and development code, while following an Agile methodology to continuously push new features to a live demo system.
+	\item We will be making use of Docker with a REST based microservices architecture to allow for scalability, reliability and performance.
 \end{itemize}
 
 \subsection{Technologies We will Use}
 \begin{itemize}
-	\item Spring\\
-	For dependancy injection and Aspect Oriented Programming.
-	\item Java\\
-	For the main development of the backend, including the matching al
-	\item AngularJS
-	\item This will be combined into a monolithic architecture\\
-\end{itemize}
+	\item Spring Framework \\
+		We will be making extensive use of the Spring Framework which provides Dependency Injection, Aspect Oriented Programming, Spring Cloud to build distributed microservices and various other Spring projects.
+	\item Spring Cloud with Netflix OSS \\
+		Utilizing Spring Cloud with Netflix OSS components will allow one to build a very stable, scalable and reliable service which will be of great value to the wider open source community.
+	\item JVM Language \\
+		The backend management service will utilize a combination of a JVM language, like Java or Groovy, with the Spring Framework and Netflix OSS components.
+	\item AngularJS \\
+		For the frontend web interface AngularJS will be used to connect to the backend REST service to provide a user friendly interface to interact with the system. The web interface will expose both a user and administration section. The administration section will allow one to gain an overview and manage the software system deployment.
+	\item Android \\
+		The mobile application will be built and deployed for the Android operating system. The mobile application will allow users to view results from there tests and to do limited administration of the system from the mobile application.
+	\end{itemize}
 
 \subsection{What Will The Client Receive}
-On completion of the development cycle the client will receive the following:
+On completion of the development cycle the client will receive the following deliverables:
 \begin{itemize}
 	\item The functional application, which includes:
 	\begin{itemize}
-		\item The functioning web interface
-		\item The backend which will run the logic required to determine the teams for the next round of the Rocking the boat" exercise of the Software Engineering module
-		\item Possibly a basic android application depending on the avaiable time
+		\item The backend system which will process and expose results via a REST API
+		\item A REST based web interface
+		\item A REST based Android application
 	\end{itemize}
-	\item The source code for the functional application
+	\item The source code for the functional application, unit and integration tests
 	\item Associated build files
-	\item The source code for all unit and integration tests
-	\item The completed Requirements Specification document for the system
-	\item All other documentation as required by the agile development methodology
-	\item (possibly) a simple user manual, but hopefully the web interface will be intuitive enouch that this will not be nessesary	
+	\item The full specification documentation as required by the Agile Development methodology
+	\item A user manual, however as one of the stated goals of the project is to develop a generic, easy to use benchmarking system that the user can use without training, this goal will need to be further discussed with the client.
 \end{itemize}

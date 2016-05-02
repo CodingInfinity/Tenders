@@ -1,46 +1,46 @@
 \subsection{Development Methodology}
-\input{../DevelopmentMethodology.tex}
+\input{../developmentMethodology.tex}
 
 \subsection{Informing the Client}
 \begin{itemize}
-	\item Since the client is on site we will want to have weekly meetings where we will report on what has been done in the past week and suggest and discuss what will be done in the coming week. This is also in line with die aglie development methodology that has been chosen.
+	\item Since the client is on site we will have weekly meetings where we will report on what has been done in the past week and discuss what will be done in the coming week. This is also in line with the Aglie development methodology that has been chosen.
 	\item Email will be used if the team has questions for the client that can not wait until the next meeting.
-	\item The client may potentially have access to a scrum server the developers are using for the project.
+	\item The client may request access to the developers scrum server and Slack communication if desired.
 \end{itemize}
 
 \subsection{Initial Ideas on Solving Some Technical Challenges}
 \begin{itemize}
-	\item Using a low level programming language such as c, c++ with assembly to gain access to the hardware and calculate correct values for the benchmarking system.
-	\item Use a REST service for the web interface.
-	\item Using git to roll out production code, and seperate this from development code.
-	\item We will use linux to gain access to system calls which could prove to be useful.
+	\item Using a low level programming language such as C or C++ with assembly to gain access to the underlying hardware in order to be able to calculate the correct values for the benchmarking system.
+	\item Use a REST based communication architecture to allow for integration with a web interface and mobile application.
+	\item Utilizing git, DevOps with a Continuous Integration and Continuous Deployment to separate production and development code, while following an Agile methodology to continuously push new features to a live demo system.
+	\item We will be making use of Docker with a REST based microservices architecture to allow for scalability, reliability and performance.
 \end{itemize}
 
 \subsection{Technologies We will Use}
 \begin{itemize}
-	\item Spring\\
-	For dependancy injection and Aspect Oriented Programming.
-	\item Spring Cloud with Netflix OSS\\
-	This will produce a truly scalable REST architecture.
-	\item Java\\
-	For the main development of the backend, allthough for the actual benchmarking a lower level language like C++ might be considered
-	to do measurements. This is so that the programs are executed by a language that does not run through something like the Java VM.
-	\item AngularJS
-	\item This will be combined into a microservices architecture\\
-	The choice of which is primarily to achieve scalability and reliablility.
-\end{itemize} 
+	\item Spring Framework \\
+		We will be making extensive use of the Spring Framework which provides Dependency Injection, Aspect Oriented Programming, Spring Cloud to build distributed microservices and various other Spring projects.
+	\item Spring Cloud with Netflix OSS \\
+		Utilizing Spring Cloud with Netflix OSS components will allow one to build a very stable, scalable and reliable service which will be of great value to the wider open source community.
+	\item JVM Language \\
+		The backend management service will utilize a combination of a JVM language, like Java or Groovy, with the Spring Framework and Netflix OSS components.   A low level language such as C, C++ or assembly will be used to do the actual measurements.
+	\item AngularJS \\
+		For the frontend web interface AngularJS will be used to connect to the backend REST service to provide a user friendly interface to interact with the system. The web interface will expose both a user and administration section. The administration section will allow one to gain an overview and manage the software system deployment.
+	\item Android \\
+		The mobile application will be built and deployed for the Android operating system. The mobile application will allow users to view their aggreagted results from there mobile application. If time permits, the possibility of exporting data from a users Android device in real-time to the backend system will be explored.
+	\end{itemize}
 
 \subsection{What Will The Client Receive}
-On completion of the development cycle the client will receive the following:
+On completion of the development cycle the client will receive the following deliverables:
 \begin{itemize}
 	\item The functional application, which includes:
 	\begin{itemize}
-		\item The functioning web interface
-		\item The backend which will run the bechmarking tests and record the results
+		\item The backend which will run the benchmarking tests and record the results
+		\item A REST based web interface
+		\item A REST based Android application
 	\end{itemize}
-	\item The source code for the functional application
+	\item The source code for the functional application, unit and integration tests
 	\item Associated build files
-	\item The source code for all unit and integration tests
-	\item The full spesification documentation as required by the agile development methodology
-	\item (possibly) a simple user manual, but this will be debated since part of the goals of the project are to develop a generic, easy to use benchmarking system that the user can hopefully use without much training
+	\item The full specification documentation as required by the Agile Development methodology
+	\item A user manual, however as one of the stated goals of the project is to develop a generic, easy to use benchmarking system that the user can use without training, this goal will need to be further discussed with the client.
 \end{itemize}
