@@ -1,7 +1,10 @@
 all: clean benchmark_tender.pdf finalize
 
-benchmark_tender.pdf: fabioStandard.pdf BrentonStandard.pdf reinhardtStandard.pdf
+benchmark_tender.pdf: andrewStandard.pdf fabioStandard.pdf BrentonStandard.pdf reinhardtStandard.pdf
 	pdflatex benchmark_tender.tex
+
+andrewStandard.pdf: andrewStandard.tex
+	pdflatex andrewStandard.tex
 
 BrentonStandard.pdf: BrentonStandard.tex
 	pdflatex BrentonStandard.tex

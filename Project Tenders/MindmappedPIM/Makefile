@@ -1,7 +1,10 @@
 all: clean mindMappedPIM_tender.pdf finalize
 
-mindMappedPIM_tender.pdf: fabioStandard.pdf BrentonStandard.pdf reinhardtStandard.pdf
+mindMappedPIM_tender.pdf: andrewStandard.pdf fabioStandard.pdf BrentonStandard.pdf reinhardtStandard.pdf
 	pdflatex mindMappedPIM_tender.tex
+
+andrewStandard.pdf: andrewStandard.tex
+		pdflatex andrewStandard.tex
 
 BrentonStandard.pdf: BrentonStandard.tex
 	pdflatex BrentonStandard.tex
@@ -16,4 +19,4 @@ clean:
 	rm -f *.toc *.log *.pdf *.out *.aux
 
 finalize:
-	pdflatex mindMappedPIM_tender.tex && pdflatex mindMappedPIM_tender.tex && pdflatex mindMappedPIM_tender.tex && pdflatex mindMappedPIM_tender.tex 
+	pdflatex mindMappedPIM_tender.tex && pdflatex mindMappedPIM_tender.tex && pdflatex mindMappedPIM_tender.tex && pdflatex mindMappedPIM_tender.tex
